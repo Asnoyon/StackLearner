@@ -20,3 +20,14 @@ console.dir(abc())
 // for (let i = 1; i <= 5; i++) {
 //     setTimeout(() => console.log(i), 1000);
 //     }
+
+function add(a) {
+    return function (b) {
+    return a + b;
+    };
+    }
+     
+    let addTen = add(10);
+    let addSeven = addTen(7);
+     
+    console.log(addSeven); // 17
