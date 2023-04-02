@@ -9,8 +9,8 @@ function sum(a, b){
     return a+b;
 }
 
-let result = sample(5,8,sum);
-console.log(result)
+let result1 = sample(5,8,sum);
+console.log(result1)
 
 let result2 = sample(5,8,function(c,d){
     return c-d
