@@ -31,3 +31,6 @@ function add(a) {
     let addSeven = addTen(7);
      
     console.log(addSeven); // 17
+
+// Hey I am learning pull
+console.log("Noyon");
