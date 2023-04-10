@@ -24,3 +24,7 @@ let items=(item.getElementsByClassName('item'));
 for(i=0; i<items.length; i++){
     items[i].style.color='red'
 }
+
+//Get Element By Tag Name
+let itemTag = document.getElementsByTagName('img')
+console.log(itemTag)
