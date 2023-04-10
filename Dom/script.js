@@ -28,3 +28,19 @@ for(i=0; i<items.length; i++){
 //Get Element By Tag Name
 let itemTag = document.getElementsByTagName('img')
 console.log(itemTag)
+
+//Query Selector
+let header = document.querySelector('.header');
+console.log(header)
+
+let newTask = document.querySelector('#new-task')
+console.log(newTask)
+
+let lastItem = document.querySelectorAll('.item:last-child')
+console.log(lastItem)
+for( let element of lastItem){
+    element.style.color = 'lime'
+}
+
+let nthItem = document.querySelector('.item:nth-child(2)')
+nthItem.style.color='yellow'
