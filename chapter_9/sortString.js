@@ -7,7 +7,15 @@
 //     if(b>a) return -1;
 //     return 0;
 // })
+let string2 = ['apple', 'Apple', 'New', 'Xet' ,'new'];
+string2.sort((a,b)=>{
+    if(a>b){
+        return 1;
 
+    } else if(b>a){return -1}
+    else {return 0;}
+})
+console.log(string2)
 let persons = [
     {
     firstName :'A',
