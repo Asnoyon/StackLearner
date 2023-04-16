@@ -34,13 +34,13 @@ arr.sort(function(a,b){
 })
 console.log(arr);
 
-persons.sort(function(a, b){
-    if(a.age>b.age){
-        return 1
-    }else if(a.age<b.age){
-        return -1
-    }else{
-        return 0
-    }
-})
-console.log(persons)
+// persons.sort(function(a, b){
+//     if(a.age>b.age){
+//         return 1
+//     }else if(a.age<b.age){
+//         return -1
+//     }else{
+//         return 0
+//     }
+// })
+// console.log(persons)
