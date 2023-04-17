@@ -44,3 +44,9 @@ for( let element of lastItem){
 
 let nthItem = document.querySelector('.item:nth-child(2)')
 nthItem.style.color='yellow'
+
+//Parent and Child selection
+const grandParent = document.querySelector('.todo-list')
+// const parent = grandParent.children;
+const children = grandParent.querySelectorAll('.item')
+console.log(children)
