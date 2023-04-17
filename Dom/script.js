@@ -49,4 +49,21 @@ nthItem.style.color='yellow'
 const grandParent = document.querySelector('.todo-list')
 // const parent = grandParent.children;
 const children = grandParent.querySelectorAll('.item')
-console.log(children)
+console.log(children);
+
+//Closest nich theke uporer dik e jay
+const children1 = document.querySelector('.item');
+const grandParent1 = children1.closest('.todo-list');
+console.log(grandParent1)
+
+
+// next children relation
+const childrenOne = document.querySelector('.item');
+const childrenTwo = childrenOne.nextElementSibling;
+childrenTwo.style.color= 'blue'
+console.log(childrenTwo);
+
+// Previous children relation
+const children2 = document.querySelector('.item').nextElementSibling;
+const childrenONE = children2.previousElementSibling;
+childrenONE.style.color = 'black'
