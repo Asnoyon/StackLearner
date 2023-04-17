@@ -1,11 +1,11 @@
 let array = [1, 2, 3, 4, 5, ];
 
-let sum = 0;
+let sum1 = 0;
 array.forEach(function(value){
     // console.log(value)
-    sum+=value
+    sum1+=value
 })
-console.log(sum)
+console.log(sum1)
 
 function forEach(array,cb){
     for(let i = 0; i<array.length; i++) {
