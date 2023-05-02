@@ -27,7 +27,7 @@ for(i=0; i<items.length; i++){
 
 //Get Element By Tag Name
 let itemTag = document.getElementsByTagName('img')
-console.log(itemTag)
+console.log(itemTag);
 
 //Query Selector
 let header = document.querySelector('.header');
