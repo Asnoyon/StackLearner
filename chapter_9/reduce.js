@@ -1,32 +1,23 @@
-let arr = [1, 2, 3, 4, 5, 6,9];
+//
+const shoppingCart = [
+  { name: "Apple", price: 1.99, quantity: 3 },
+  { name: "Apple", price: 1.99, quantity: 3 },
+  { name: "Xiomi", price: 2.99, quantity: 2 },
+  { name: "Samsung", price: 3.99, quantity: 1 },
+  { name: "Tesla", price: 3.99, quantity: 1 },
+  { name: "Tesla", price: 4.99, quantity: 4 },
+  { name: "Nokia", price: 4.99, quantity: 4 },
+];
 
-let sum = arr.reduce(function(prev, curr){
-    return prev + curr;
-},100)
+const products = shoppingCart.reduce((productGroup, product) => {
+  const name = product.name;
+  if (productGroup[name] == null) {
+    productGroup[name] = [];
+  }
+  productGroup[name].push(product);
 
-let max = arr.reduce(function(prev, curr){
-    return Math.max(prev, curr)
-})
-console.log(sum)
-console.log(max)
+  return productGroup;
+}, {});
 
-function myReduce(arr, cb, acc){
-    for ( let i = 0; i< arr.length; i++){
-        acc = cb(acc, arr[i])
-    }
-    return acc;
-}
 
-let sum1 = myReduce(arr, function(prev,curr){
-    return prev + curr
-},0)
-let max1 = myReduce(arr, function(prev,curr){
-    return Math.max(prev, curr)
-},0)
-let min = myReduce(arr, function(prev,curr){
-    return Math.min(prev, curr)
-},arr[0])
-
-console.log(sum1);
-console.log(max1);
-console.log(min)
+console.log(products);
